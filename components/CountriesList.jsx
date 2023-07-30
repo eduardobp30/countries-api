@@ -1,8 +1,9 @@
 "use client";
 
-import CountryCard from "./CountryCard";
 import { useState } from "react";
-import SearchBar from "./SearchBar";
+import CountryCard from "@/components/CountryCard";
+import SearchBar from "@/components/SearchBar";
+
 import Filter from "./Filter";
 
 export default function CountriesList({ data }) {
@@ -10,7 +11,6 @@ export default function CountriesList({ data }) {
   const [selectedRegion, setSelectedRegion] = useState("");
 
   return (
-    // <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:px-6 lg:grid-cols-4">
     <div className="flex flex-col items-center gap-10">
       <div className="flex flex-col gap-6 self-start w-full md:flex-row md:justify-between">
         <SearchBar onChange={(e) => setSearchField(e.target.value)} />
@@ -37,7 +37,7 @@ export default function CountriesList({ data }) {
             <CountryCard country={country} data={data} key={index} />
           )).length === 0 && (
           <p className="text-center font-bold md:col-span-2 lg:col-span-4 dark:text-[#F5F5FA]">
-            No results for "{searchField}" found.
+            {`No results for "${searchField}" found.`}
           </p>
         )}
 

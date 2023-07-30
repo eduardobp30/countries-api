@@ -39,7 +39,7 @@ const CountryInfo = ({ data, country }) => {
           </li>
           <li>
             <span className="font-bold">Top Level Domain:</span>{" "}
-            {country[0].tld[0]}
+            {country[0].tld ? country[0].tld[0] : "NA"}
           </li>
           <li>
             <span className="font-bold">Currency:</span>{" "}

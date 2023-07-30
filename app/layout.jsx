@@ -1,5 +1,5 @@
 import Nav from "@/components/Nav";
-import "./globals.css";
+import "@/app/globals.css";
 import { Nunito_Sans } from "next/font/google";
 import ThemeProvider from "@/context/ThemeContext";
 
