@@ -1,6 +1,6 @@
 # Countries API
 
-🔗 Link para o projeto: https://pokedex-indol-ten.vercel.app
+🔗 Link para o projeto: https://countries-api-jade.vercel.app/
 
 ## Descrição
 
