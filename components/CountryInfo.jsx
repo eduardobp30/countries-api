@@ -61,8 +61,11 @@ const CountryInfo = ({ data, country }) => {
         <h2 className="font-bold mt-10 mb-4">Border Countries:</h2>
         <ul className="grid grid-cols-3 gap-4 auto-rows-fr">
           {country[0].borders ? (
-            country[0].borders.map((country) => (
-              <li className="rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dark:bg-[#2B3945] dark:text-[#F5F5FA] ease-in-out duration-300 hover:opacity-75">
+            country[0].borders.map((country, index) => (
+              <li
+                key={index}
+                className="rounded-sm shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dark:bg-[#2B3945] dark:text-[#F5F5FA] ease-in-out duration-300 hover:opacity-75"
+              >
                 <Link
                   href={`/${data.find((obj) => obj.cca3 === country).cca2}`}
                   className="w-full h-full p-2 flex items-center justify-center text-center"
