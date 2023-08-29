@@ -6,9 +6,9 @@
 
 Este é um projeto que traz informações de todos os países do mundo. Foi utilizada a API REST Countries para buscar as informações dos países.
 
-### Funcionalidades
-
 ![Screenshot 2023-08-29 at 20 03 43](https://github.com/eduardobp30/countries-api/assets/117321152/e6f251d5-a883-4722-a5f6-03d3de3ba547)
+
+### Funcionalidades
 
 - A tela inicial do projeto apresenta uma lista de todos os países com a imagem da bandeira do país, nome, população, região e capital. 
 - Acima da lista tem uma barra de pesquisa para buscar um país pelo nome e um filtro com a opção de filtrar os países pela região.
